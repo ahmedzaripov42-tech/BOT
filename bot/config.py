@@ -11,9 +11,6 @@ CHANNEL_1_NAME = os.getenv("CHANNEL_1_NAME")
 CHANNEL_2_ID = os.getenv("CHANNEL_2_ID")
 CHANNEL_2_NAME = os.getenv("CHANNEL_2_NAME")
 
-if not BOT_TOKEN:
-    raise ValueError("BOT_TOKEN required in .env")
-
 CHANNELS = []
 if CHANNEL_1_ID:
     CHANNELS.append({
